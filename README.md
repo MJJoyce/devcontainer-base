@@ -14,13 +14,14 @@ devpod provider add docker
 ```
 
 1. Clone [devcontainer-base](https://github.com/MJJoyce/devcontainer-base) repository. Name this repo clone with the name you want for your new container environment. `cd` into the new folder.
-2. Create a new dev container with `DevPod`
+2. Update the output container name with a unique name.
+3. Create a new dev container with `DevPod`
 
 ```
 devpod up . --dotfiles git@github.com:MJJoyce/dots.git --ide none --dotfiles-script=install_devpod.sh
 ```
 
-3. SSH to the new dev container to finish setup: `devpod ssh` and then select the relevant environment.
-4. Open `vim` to auto install plugins and dependencies.
+4. SSH to the new dev container to finish setup: `devpod ssh` and then select the relevant environment.
+5. Open `vim` to auto install plugins and dependencies.
 
 Your dev container is ready for use.
